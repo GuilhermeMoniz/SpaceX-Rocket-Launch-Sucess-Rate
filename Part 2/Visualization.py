@@ -1,8 +1,8 @@
 # Import libraries
 import pandas as pd
 import numpy as np
-import matplotlib.pyplot as plt # type: ignore
-import seaborn as sns # type: ignore
+import matplotlib.pyplot as plt 
+import seaborn as sns 
 
 # Read the spaceX dataset into pandas dataframe
 url = "C://Users/guimo/datasets/dataset_part_2.csv"
