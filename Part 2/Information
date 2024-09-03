@@ -1,0 +1,22 @@
+# SQL:
+We started off our exploratory data analysis with SQL.
+After loading the data we ran SQL queries in order to display and list information about:
+
+  - Launch sites
+  - Payload mass
+  - Booster versions
+  - Mission outcomes
+  - Booster landings
+
+
+# VISUALIZATION:
+In terms of Visualization, we read the dataset into a Pandas data frame so we could then use libraries such as Matplotlib and Seaborn to plot the results obtained.
+Examples of created plots:
+
+  - FlightNumber X PayloadMass
+  - FlightNumber X LaunchSite
+  - Payload X LaunchSite
+  - OrbitType X SuccessRate
+  - FlightNumber X OrbitType
+  - Payload X OrbitType
+  - Year X SuccessRate
