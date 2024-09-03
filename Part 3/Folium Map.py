@@ -1,9 +1,9 @@
 # Import Libraries
 import pandas as pd
-import folium# type: ignore
-from folium.plugins import MarkerCluster# type: ignore
-from folium.plugins import MousePosition# type: ignore
-from folium.features import DivIcon# type: ignore
+import folium
+from folium.plugins import MarkerCluster
+from folium.plugins import MousePosition
+from folium.features import DivIcon
 
 """"""
 
