@@ -1,0 +1,22 @@
+# PREDICTIVE ANALYSIS
+For the development of our model, we first installed all the necessary libraries to create a confusion matrix (Pandas, Numpy, Matplotlib, Seaborn, Sklearn).
+
+These were the following steps in order:
+
+  - Loaded the dataframe created during data collection
+  - Created a column for our training label (“Class”) created during data wrangling
+  - Standardized the data
+  - Split the data into training data and test data
+
+The next step consisted in fitting the training data to various model types:
+
+  - Logistic Regression
+  - Support Vector Machine
+  - Decision Tree Classifier
+  - K-Nearest Neighbor Classifier
+
+Used a cross-validation grid-search over a variety of hyperparameters to select the best ones for each model:
+
+  - Enabled by Scikit-learn function GridSearchCV
+
+Evaluated accuracy of each model using test data to select the best model.
