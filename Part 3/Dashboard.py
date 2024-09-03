@@ -1,11 +1,11 @@
 # Import Libraries
 import pandas as pd
-import dash # type: ignore
-import dash_html_components as html# type: ignore
-import dash_core_components as dcc# type: ignore
-from dash.dependencies import Input, Output# type: ignore
-from jupyter_dash import JupyterDash# type: ignore
-import plotly.graph_objects as go# type: ignore
+import dash 
+import dash_html_components as html
+import dash_core_components as dcc
+from dash.dependencies import Input, Output
+from jupyter_dash import JupyterDash
+import plotly.graph_objects as go
 
 """"""
 
@@ -82,7 +82,7 @@ app.layout = html.Div(children=[html.H1('SpaceX Launch Records Dashboard',
 def get_pie_chart(entered_site):
     filtered_df = spacex_df
     if entered_site == 'ALL':
-        fig = px.pie(filtered_df, values='class', # type: ignore
+        fig = px.pie(filtered_df, values='class', 
         names='Launch Site', 
         title='Success Count for all launch sites')
         return fig
@@ -90,7 +90,7 @@ def get_pie_chart(entered_site):
         # return the outcomes piechart for a selected site
         filtered_df=spacex_df[spacex_df['Launch Site']== entered_site]
         filtered_df=filtered_df.groupby(['Launch Site','class']).size().reset_index(name='class count')
-        fig=px.pie(filtered_df,values='class count',names='class',title=f"Total Success Launches for site {entered_site}")# type: ignore
+        fig=px.pie(filtered_df,values='class count',names='class',title=f"Total Success Launches for site {entered_site}")
         return fig
 
 """"""
@@ -105,10 +105,10 @@ def scatter(entered_site,payload):
     # thought reusing filtered_df may cause issues, but tried it out of curiosity and it seems to be working fine
     
     if entered_site=='ALL':
-        fig=px.scatter(filtered_df,x='Payload Mass (kg)',y='class',color='Booster Version Category',title='Success count on Payload mass for all sites')# type: ignore
+        fig=px.scatter(filtered_df,x='Payload Mass (kg)',y='class',color='Booster Version Category',title='Success count on Payload mass for all sites')
         return fig
     else:
-        fig=px.scatter(filtered_df[filtered_df['Launch Site']==entered_site],x='Payload Mass (kg)',y='class',color='Booster Version Category',title=f"Success count on Payload mass for site {entered_site}")# type: ignore
+        fig=px.scatter(filtered_df[filtered_df['Launch Site']==entered_site],x='Payload Mass (kg)',y='class',color='Booster Version Category',title=f"Success count on Payload mass for site {entered_site}")
         return fig
 
 # Run the app
