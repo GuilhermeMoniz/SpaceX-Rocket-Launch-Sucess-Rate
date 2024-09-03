@@ -1,0 +1,16 @@
+# FOLIUM:
+We built an Interactive Map which we used for different things, with the main one being, the analysis of Launch Sites Locations.
+
+For that we used Pythons’s interactive mapping library, Folium:
+  - started by marking all launch sites on the map
+  - identified the successful/failed launches for each site on the map
+
+We also alculated the distances between a launch site and its proximities:
+  - Railways
+  - Highways
+  - Coastlines
+  - Cities
+
+
+# DASHBOARD:
+The final part of this work consisted in creating an interactive dashboard, with the objective of having an easy and simple way of manipulating and displaying our data, using the Plotly Dash library.
