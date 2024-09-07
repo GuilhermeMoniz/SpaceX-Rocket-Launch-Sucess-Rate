@@ -1,4 +1,4 @@
-# Data Collection
+# DATA COLLECTION
 
 API:
 Regarding these steps, we started by acquiring some historical launch data from SpaceX’s Open Source REST API, in which we requested and parsed their launch data using the GET request.
