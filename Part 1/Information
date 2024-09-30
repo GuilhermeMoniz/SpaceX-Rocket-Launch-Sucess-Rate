@@ -1,4 +1,4 @@
-# DATA COLLECTION
+## DATA COLLECTION
 
 API:
 Regarding these steps, we started by acquiring some historical launch data from SpaceX’s Open Source REST API, in which we requested and parsed their launch data using the GET request.
@@ -10,7 +10,7 @@ Then extracted all column/variable names from the HTML table header.
 Finally, we parsed the table and converted it into a Pandas data frame.
 
 
-# DATA WRANGLING
+## DATA WRANGLING
 The objective for this part was to explore the data and determine the label for training supervised models:
 
   - Calculated the number of launches of each site
